@@ -1,0 +1,10 @@
+version: 1
+services:
+  - name: web
+    env:
+      - key: FLASK_ENV
+        value: production
+    buildCommand: pip install -r requirements.txt
+    startCommand: |
+      python -c "from app import db; with app.app_context(): db.create_all()"
+      gunicorn -b :$PORT app:app
