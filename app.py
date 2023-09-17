@@ -5,7 +5,7 @@ from sqlalchemy.exc import IntegrityError
 
 app = Flask(__name__)
 # Configure the SQLAlchemy database connection
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///api.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False  # Turn off tracking modifications
 db = SQLAlchemy(app)
 #app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
