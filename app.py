@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+PYTHON_VERSION=3.11
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.exc import IntegrityError
