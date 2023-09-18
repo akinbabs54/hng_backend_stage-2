@@ -9,7 +9,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("DATABASE_URI")
+app.config["SQLALCHEMY_DATABASE_URI"] = os.getenv("postgresql://hng_2_user:Yf50DOsEiYcU3MNOe8AwpxWjs7qkpuNT@dpg-ck3fuub6fquc73cbn4k0-a:5432/hng_2")
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False  # Turn off tracking modifications
 db = SQLAlchemy(app)
 
