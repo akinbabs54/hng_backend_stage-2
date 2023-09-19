@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 PYTHON_VERSION=3.11
-main
 from flask import Flask, request, jsonify, make_response
 from flask_sqlalchemy import SQLAlchemy
 from dotenv import load_dotenv
